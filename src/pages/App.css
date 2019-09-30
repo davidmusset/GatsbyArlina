@@ -1,0 +1,1662 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #1a2024;
+}
+
+
+/* ------------------------  CSS du Header --------------------------*/
+
+.Header_fixed{
+  position:fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  height: 70px;
+  border-bottom-style: outset;
+  border-bottom-color: #EBEFEE;
+  border-bottom-width:thin;
+  z-index: 5;
+}
+
+@media screen and (max-width: 800px) {
+    .Header_fixed {
+        justify-content: flex-end!important;
+        min-width: 400px;
+    }
+}
+
+.Arlina_main{
+  margin-top: 70px;
+  width : 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .Arlina_main{
+        position:absolute;
+        top:-48px;
+        left:0px;
+    }
+    .HeaderPerso_Link{
+      position:absolute;
+      left:100px;
+      font-size: 16px!important;
+    }
+}
+
+
+.Header_link{
+ text-decoration: none;
+ color: black;
+ padding: 20px;
+}
+
+.HeaderPerso_Link{
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Lobster', cursive;
+  width: 855px;
+  color: #258AC7;
+  font-weight: bold;
+  font-size: 25px;
+  margin:0px;
+  padding-left: 60px;
+}
+
+.Header_link:hover{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .Header_link {
+        display: none !important;
+    }
+}
+
+/*  Bouton Créer */
+.Create_link{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #E83689!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+}
+
+.Create_link:hover{
+  text-decoration: none;
+  background-color: #F7B0D1 !important;
+}
+
+.Create_link:active{
+  transform: translateY(4px);
+}
+
+/*  Bouton Finaliser */
+
+.Create_link_Achat{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #258AC7!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+}
+
+.Create_link_Achat:hover{
+  text-decoration: none;
+  background-color: #07659d !important;
+}
+
+.Create_link_Achat:active{
+  transform: translateY(4px);
+}
+
+
+/*  Header page Paiement */
+
+.Header_Paiement{
+  position:fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFF;
+  height: 70px;
+  border-bottom-style: outset;
+  border-bottom-color: #EBEFEE;
+  border-bottom-width:thin;
+  z-index: 5;
+}
+
+
+/* --------------- CSS de HomePage ------------------------- */
+
+.HomePage{
+}
+
+.Section_1_Form_Carousel{
+  margin-top: 70px;
+  padding-top: 50px;
+  color: #FFF;
+  background-image: url("/img/RUBRIQUE_1_fond.jpg");
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+  color: #E83689;
+  background: rgba(255, 255, 255, .7);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Carousel_1{
+  width: 1000px;
+  max-width: 95%;
+  border: 5px solid #FFF;
+  border-radius: 5px;
+}
+
+.Create_Form{
+  margin: 15px;
+  width: 1000px;
+  max-width: 95%;
+  border: 5px solid #FFF;
+  border-radius: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form_name{
+  width: 60%;
+  padding: 10px;
+}
+
+.pictos_genre{
+  width: 10%;
+  padding: 10px;
+  color: black;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.pictos_genre:hover{
+  border-radius: 50%;
+  background-color: #EBEFEE!important;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .pictos_genre {
+        display: none !important;
+    }
+}
+
+
+.Section_2_CommentMarche{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: #e83689;
+}
+
+.Fonctionnement{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1000px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Fonctionnement {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Questions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1000px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Questions {
+        display: none!important;
+    }
+}
+
+.CommentCadre{
+  margin:10px;
+}
+
+.pictoFonction{
+  margin : 20px;
+}
+
+
+.Section_3_Questions{
+  margin-top: 30px;
+  color: Black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.Title_3{
+  margin-top: 30px;
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+  color: #39B28F;
+    text-shadow: -3px 0px 2px white, 0 3px 2px white, 3px 0 2px white, 0 -3px 2px white;
+}
+
+.PictoQ_Cadre{
+  padding:10px;
+  width: 100%;
+  height: 100%;
+}
+
+.Title_Question{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Question_Cadre{
+  padding: 10px;
+}
+
+.FonctionCarousel{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .FonctionCarousel {
+        display:block;
+    }
+}
+
+.PictoQ_Cadre_Mobile{
+  padding:10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF;
+}
+
+.mobileslider{
+  width: 300px;
+}
+
+.GlobalBest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Best{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.BestClaim{
+  width: 33%;
+}
+
+.pictoClaim{
+  height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .pictoClaim {
+        height: 50px;
+    }
+}
+
+.TitleClaim{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .TitleClaim {
+        font-size: 15px;
+    }
+}
+
+.AvisClient{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/RUBRIQUE_5_FOND.jpg");
+  background-size: cover;
+}
+
+.TitreAvis{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Title_Avis{
+  background-color: #FFF;
+  height: 61px!important;
+  font-family: 'Lobster', 'regular';
+  font-size: 36px;
+  margin-bottom: 0;
+  color: #e83689;
+}
+
+.BandeauAvis{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1000px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .BandeauAvis {
+        display: none!important;
+    }
+}
+
+.AvisCarousel{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .AvisCarousel {
+        display:block;
+        width: 100%;
+    }
+}
+
+.Avis_Cadre{
+  padding:10px;
+  width: 100%;
+  height: 400px;
+  background-color: #FFF;
+  margin: 10px;
+  padding: 10px;
+}
+
+.PictoClient{
+  height: 100px;
+  border-radius:50%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .PictoClient {
+        width: 100px!important;
+    }
+    .Avis_Cadre{
+      width: 90%;
+    }
+}
+
+.Review{
+  height: 200px;
+  font-style: italic;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.star{
+  color:#EBA000;
+}
+
+
+.Review_Cadre_Mobile{
+  padding:10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel .slide {
+  background: none!important
+}
+
+.Contact{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Contact_id{
+  padding: 10px;
+}
+.Contact_Form{
+  width: 50%;
+}
+.FormMessage{
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+
+
+/* -------------- CSS de la page Choix Livre ---------- */
+
+
+.ChoixLivre{
+  margin-top: 70px;
+  background-image: url("/img/CREERVOTREHISTOIRE_FOND.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.CadreChoixLivre{
+  margin-top: 100px;
+  background-color: #FFF;
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin-bottom:50px;
+}
+
+
+.CadreDroite{
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Apercu{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.DescriptionBook{
+  padding: 30px;
+  width: 50%;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .CadreChoixLivre {
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    .CadreDroite{
+      width: 100%!important;
+    }
+    .DescriptionBook{
+      width: 100%!important;
+    }
+    .Apercu{
+      height: auto;
+    }
+}
+
+.LivreCharac{
+  font-size: 17px;
+  font-weight: bold;
+}
+.BulletsLivre{
+  color: #39B28F;
+  font-size: 10px!important;
+  vertical-align: middle;
+}
+
+.Qualites{
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.Personnalise_Button{
+  margin-top: 10px!important;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #E83689!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+  font-size:15px;
+  height: 30%;
+}
+
+.Personnalise_Button:hover{
+  text-decoration: none;
+  background-color: #F7B0D1 !important;
+}
+
+.Personnalise_Button:active{
+transform: translateY(4px);
+}
+
+
+.Personnalise_Button_soon{
+  margin-top: 10px!important;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: grey!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+  font-size:15px;
+  height: 30%;
+}
+
+.Personnalise_Button:hover{
+  text-decoration: none;
+}
+
+
+/* ------------------- Personnalisation ----------------- */
+
+/* ------------------- Header Perso ----------------- */
+
+.Personnalisation{
+  padding-top: 110px;
+  background-image: url("/img/CREERVOTREHISTOIRE_FOND.jpg");
+  background-size: cover;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.BasicsTop{
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Jauge{
+  width: 1000px;
+  height: 20px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LabelJauge{
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.Labels{
+  width: 250px;
+  cursor: pointer;
+}
+
+.Labels:hover{
+  color: #FFF!important;
+}
+
+.JaugeMid{
+  width: 1000px;
+  height: 15px;
+  margin-left: 6px;
+  margin-right: 16px;
+}
+
+.CircleMid{
+  color: #999;
+  font-size: 30px;
+  border: 3px #FFF solid;
+  border-radius: 100%;
+  position: relative;
+  top:-23px;
+  cursor: pointer;
+}
+
+.CircleMid:hover{
+  color:#48B460!important;
+}
+
+@media screen and (max-width: 900px) {
+    .BasicsTop {
+      display: none
+    }
+}
+
+/* ------------------- Basics ----------------- */
+
+.CadreChoixBasics{
+  background-color: #FFF;
+  margin-top: 20px;
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px #666;
+  margin-bottom:30px;
+}
+
+
+.CadreGaucheBasics{
+  width: 50%;
+  height: 400px!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.CadreDroiteBasics{
+  width: 50%;
+  background-image: url("/img/Apercu/fond.png")!important;
+  background-size:cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px;
+}
+
+.CadreDroiteDedicace{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px;
+}
+
+@media screen and (max-width: 900px) {
+    .CadreChoixBasics {
+      flex-direction: column-reverse!important;
+      width: 90%!important;
+      min-width: 400px;
+    }
+    .CadreGaucheBasics{
+      width: 90%!important;
+      min-width: 400px;
+      height: auto!important;
+    }
+    .CadreDroiteBasics{
+      width: 90%!important;
+      min-width: 400px;
+
+    }
+}
+
+.TitreDroite{
+  color:#258AC7;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #FFF;
+  padding: 5px;
+  border: 1px solid #258AC7;
+  border-radius: 7%;
+}
+
+.LabelBasics{
+  color:#5E6977;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.BasicsInput{
+  width: 90%!important;
+}
+.BasicsInputErreur{
+  width: 90%!important;
+  border: 3px red solid!important;
+}
+
+.InputGenre{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.Basics_genre{
+  padding: 10px;
+  color: black;
+  border-radius: 30%;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+.Basics_genre:hover{
+  background-color: #EBEFEE!important;
+  cursor: pointer;
+}
+
+.CadreTypographie{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.TabNav{
+  width: 100%!important;
+  margin-bottom: 10px!important;
+  flex-wrap: nowrap!important;
+}
+
+@media screen and (max-width: 900px) {
+    .TabNav{
+      overflow-x: scroll!important;
+      overflow-y: hidden!important;
+    }
+}
+
+.TabClass{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.LabelCouleur{
+  font-weight: bold;
+  margin: 0px;
+  text-align: left;
+}
+
+.CadreCouleur{
+  display: flex;
+  flex-direction: row;
+  height: 65px!important;
+  align-items: center!important;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.LabelStyle{
+  font-weight: bold;
+  margin-top: 10px!important;
+  text-align: left!important;
+  margin-bottom: 0px;
+}
+
+.AllStyle{
+  height: 200px;
+  display: inline-block;
+  overflow-y: auto;
+  text-align: left!important;
+  width: 100%;
+}
+
+.Couleur{
+  width: 50px;
+  margin-left: 10px;
+}
+
+.Couleur:hover{
+  cursor: pointer;
+  border: 2px solid #258AC7!important;
+}
+
+.Style{
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.Style:hover{
+  cursor: pointer;
+  border: 2px solid #258AC7!important;
+}
+
+
+
+    /* -------------- CSS de lApercu ---------- */
+
+.ApercuPeau{
+  position: absolute;
+  width: 305px;
+  top: 330px;
+  z-index: 1;
+}
+
+.ApercuCheveux{
+  position: absolute;
+  width: 305px;
+  top: 330px;
+  z-index: 2;
+}
+
+.ApercuYeux{
+  position: absolute;
+  width: 305px;
+  top: 330px!important;
+  z-index: 3;
+}
+
+.ApercuLunettes{
+  position: absolute;
+  width: 305px;
+  top: 330px!important;
+  z-index: 4;
+}
+
+.ApercuAutres{
+  position: absolute;
+  width: 305px;
+  top: 330px!important;
+  z-index: 4;
+}
+
+@media screen and (max-width: 900px) {
+    .ApercuPeau{
+      top: 220px!important;
+    }
+    .ApercuCheveux{
+      top: 220px!important;
+    }
+    .ApercuYeux{
+      top: 220px!important;
+    }
+    .ApercuLunettes{
+      top: 220px!important;
+    }
+    .ApercuAutres{
+      top: 220px!important;
+    }
+}
+
+/* --------------- Page Dedicace ------------------*/
+
+.InputDedicace{
+    width: 90%!important;
+    height: 300px!important;
+    margin-bottom: 10px;
+}
+
+.ImageUpload{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* -------------- Page Previsualisation -------------*/
+
+.Previsualiser{
+  padding: 10px;
+  height: inherit;
+}
+
+
+/* -------------- Page Achat -------------*/
+
+.PageAchatGlobal{
+  margin-top: 70px;
+  padding-top: 50px;
+  background-image: url("/img/CREERVOTREHISTOIRE_FOND.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.separation{
+  margin-top: 32px;
+}
+
+.ShopItem{
+  background-color: #FFF;
+  width: 1000px;
+  max-width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  margin-bottom:50px;
+}
+
+.ApercuPerso{
+  width: 25%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.DescriptionAchat{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+.ApercuLivre{
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ApercuDedicace{
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ImgLivrePanier{
+  width: 100%;
+}
+
+
+.ForName{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+}
+
+
+.PrixPanier{
+  width: 20%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #E83689;
+  font-weight: bold;
+
+}
+
+.Prix{
+  margin: 0;
+  padding: 3px;
+}
+
+.DeleteCross{
+  position: relative;
+  top: -5px;
+  right:5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+    /* Apercu du panier */
+    .ApercuPeauPanier{
+      position: absolute;
+      top: 260px;
+      width: 150px;
+      z-index: 1;
+    }
+
+    .ApercuCheveuxPanier{
+      position: absolute;
+      width: 150px;
+      top: 260px;
+      z-index: 2;
+    }
+
+    .ApercuYeuxPanier{
+      position: absolute;
+      width: 150px;
+      top: 260px;
+      z-index: 3;
+    }
+
+    .ApercuLunettesPanier{
+      position: absolute;
+      width: 150px;
+      top: 260px;
+      z-index: 4;
+    }
+
+    .ApercuVetementPanier{
+      position: absolute;
+      width: 150px;
+      top: 260px;
+      z-index: 5;
+    }
+
+@media screen and (max-width: 900px) {
+  .DescriptionAchat{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .ImgLivrePanier{
+    display: none;
+  }
+  .ApercuPerso{
+    margin-top: 0;
+  }
+  .ApercuDedicace{
+    width: 100%;
+    margin: 0;
+  }
+  .ApercuLivre{
+    width: 100%;
+    margin: 0;
+  }
+  .VidePanier{
+    width: 0%!important;
+  }
+  .RempliPanier{
+    width: 100%!important;
+  }
+  .TotalText{
+    width: 30%!important;
+  }
+  .TotalMontant{
+    width: 70%!important;
+  }
+  .Cadre_Bouton_Gauche_Achat{
+    width: 100%!important;
+    margin-top: 20px!important;
+  }
+  .Cadre_Bouton_Droite_Achat{
+    width: 100%!important;
+  }
+  .Cadre_Boutons_Bas_Panier{
+      flex-direction: column-reverse!important;
+    }
+}
+
+
+.Total{
+
+  width: 1000px;
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom:50px;
+}
+
+.VidePanier{
+  width: 55%;
+}
+.RempliPanier{
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.TotalText{
+  width: 66%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.TotalMontant{
+  width: 33%;
+  font-size: 20px;
+  color: #E83689;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* -------------- Bouton du Bas -------------*/
+.Cadre_Boutons_Bas{
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Cadre_Bouton_Gauche{
+  width: 50%;
+  margin: 0px;
+}
+.Cadre_Bouton_Droite{
+  width: 50%;
+  margin: 0px;
+}
+
+.Cadre_Bouton_Gauche_Achat{
+  width: 50%;
+  margin: 0px;
+}
+.Cadre_Bouton_Droite_Achat{
+  width: 50%;
+  margin: 0px;
+}
+
+.Bouton_Perso{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #E83689!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+  box-shadow: 3px 3px #999;
+  width: 95%;
+}
+
+.Bouton_Perso:hover{
+  text-decoration: none;
+  background-color: #F7B0D1 !important;
+}
+
+.Bouton_Perso:active{
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.Bouton_AjouterPanier{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #E83689!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+  box-shadow: 3px 3px #999;
+  width: 50%;
+}
+
+.Bouton_AjouterPanier:hover{
+  text-decoration: none;
+  background-color: #F7B0D1 !important;
+}
+
+.Bouton_AjouterPanier:active{
+  transform: translateY(4px);
+}
+
+
+/*  Bouton Acheter */
+
+.Link_Achat{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  color : #FFF!important;
+  font-weight: bold!important;
+  background-color: #258AC7!important;
+  text-decoration: none!important;
+  border-radius: 10px!important;
+  border: none!important;
+  box-shadow: 3px 3px #999;
+  width: 50%;
+}
+
+.Link_Achat:hover{
+  text-decoration: none;
+  background-color: #07659d !important;
+}
+
+.Link_Achat:active{
+  transform: translateY(4px);
+}
+
+
+.Cadre_Boutons_Bas_Panier{
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* -------------- Page Paiement -------------*/
+
+.PagePaiementGlobal{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button_voir_panier{
+  background-color: #258AC7!important;
+  border: none!important;
+  box-shadow: 3px 3px #999;
+  display: none!important;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .Button_voir_panier{
+    display: inline!important;
+  }
+  .Colonne_Droite_Paiement{
+    display: none!important;
+  }
+  .Colonne_Gauche_Paiement{
+    width: 100%!important;
+  }
+}
+
+.Colonne_Gauche_Paiement{
+  width: 70%;
+  background-color: #f6f9fc;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Title_Paiement{
+  color: #32325d;
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 40px;
+  margin: 40px 0 10px 0;
+  padding: 0;
+}
+
+/* -------------- STRIPE -------------*/
+
+button {
+  white-space: nowrap;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  background-color: #6772e5;
+  text-decoration: none;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  margin-top: 10px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+button:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #7795f8;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .10), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.StripeElement {
+  display: block;
+  margin: 10px 0 20px 0;
+  max-width: 500px;
+  min-width: 280px;
+  padding: 10px 14px;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border-radius: 4px;
+  background: white;
+}
+
+.StripeElement--focus {
+  box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+/* -------------- STRIPE -------------*/
+
+.PaymentForm{
+  border: 2px solid #E8E8FC;
+  border-radius: 10px;
+  width: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .PaymentForm{
+    width: 90%;
+  }
+}
+
+.GlobalForm{
+  width: 80%;
+  min-width: 280px;
+}
+
+.BillingForm{
+  padding-bottom: 10px;
+}
+
+.FirstInputStyle{
+  width: 100%;
+  height: 40px;
+  background-color: #FFF;
+  border-top: 1px solid #F2F6F9;
+  border-bottom: 0;
+  border-left: 1px solid #F2F6F9;
+  border-right: 1px solid #F2F6F9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 1px 1px 1px #E7ECF2, -1px 1px 1px #E7ECF2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.InputStyle{
+  width: 100%;
+  height: 40px;
+  background-color: #FFF;
+  border-top: 1px solid #F2F6F9;
+  border-bottom: 0;
+  border-left: 1px solid #F2F6F9;
+  border-right: 1px solid #F2F6F9;
+  box-shadow: 1px 1px 1px #E7ECF2, -1px 1px 1px #E7ECF2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.LastInputStyle{
+  width: 100%;
+  height: 40px;
+  background-color: #FFF;
+  border-top: 1px solid #F2F6F9;
+  border-bottom: 1px solid #F2F6F9;
+  border-left: 1px solid #F2F6F9;
+  border-right: 1px solid #F2F6F9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 1px #E7ECF2, -1px 1px 1px #E7ECF2, 0px 2px 6px #DEE5EE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.TextPaymentForm{
+  color: #525F7E;
+  font-weight: bold;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.TextPaymentForm2{
+  color: #525F7E;
+  font-weight: bold;
+  margin: 0px;
+  padding-right: 10px;
+  width: 30%;
+}
+
+.InputInside{
+  width:70%;
+  height: 90%;
+  border : 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.InputInsideLast{
+  width:45%;
+  height: 90%;
+  border : 0;
+}
+.InputInsideLast2{
+  width:25%;
+  height: 90%;
+  border : 0;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #B3C0CB;
+  opacity: 1; /* Firefox */
+}
+
+.Title_PaymentForm{
+  color: #32325d;
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+
+.Colonne_Droite_Paiement{
+  width: 30%;
+  height: 100vh;
+}
+
+.Title_Achat{
+  color: #258AC7;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.BottomBar{
+  color: #BDBDBD;
+}
+
+
+.ShopItemAchat{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgLivreAchat{
+  width: 30%;
+}
+.LivreTitle{
+  width: 100%;
+  font-weight: bold;
+}
+.PrixAchat{
+  width: 20%;
+  font-weight: bold;
+  color: #E83689;
+}
+
+.SubTotal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.SubTotalTitle{
+  font-weight: bold;
+  width: 80%;
+  text-align: left;
+}
+
+.PrixSubtotal{
+  font-weight: bold;
+  color: #E83689;
+  width: 20%;
+  text-align: right;
+}
+
+.TotalTitle{
+  font-weight: bold;
+  width: 80%;
+  text-align: left;
+  font-size: 25px;
+}
+
+.PrixTotal{
+  font-weight: bold;
+  color: #E83689;
+  width: 20%;
+  font-size: 25px;
+  text-align: right;
+}
+
+
+/* -------------- Pages du Footer ---------- */
+
+.CorpsStandard{
+  margin-top: 70px;
+  padding: 60px;
+  background-color: #386162;
+  color: #FFF;
+}
+
+.Titre_CGV{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Bullet_CGV{
+  font-size: 16px;
+  text-align: center;
+}
+
+/* -------------- CSS du Footer ---------- */
+
+.Footer{
+  background-color: #386162;
+  color: #A1C2CC;
+}
+
+.Footer a{
+  text-decoration: none;
+  color: #A1C2CC;
+}
+
+.Footer a:hover{
+  text-decoration: none;
+  color: #FFF!important;
+}
+
+.Footer a:visited{
+  text-decoration: none;
+  color: #A1C2CC;
+}
+
+.buttonStripe{
+}
+
+.buttonStripeHide{
+  display: none!important;
+}
+
+.Footer_RS{
+}
+
+.RS{
+  width: 80px;
+  padding: 10px;
+  cursor: pointer;
+}

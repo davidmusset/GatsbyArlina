@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Créez un livre personnalisé unique pour votre enfant de 3 à 7 ans. Un cadeau magique qui émerveillera votre enfant. Personnalisez l'apparence directement sur le site, commandez votre livre et recevez le en une semaine.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -13,9 +13,38 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@feathersjs/feathers": "^4.3.0-pre.1",
+    "@feathersjs/rest-client": "^4.3.0-pre.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.4.0",
+    "express": "^4.17.0",
+    "express-favicon": "^2.0.1",
+    "fs": "0.0.1-security",
     "gatsby": "^2.15.28",
-    "react": "^16.10.0",
-    "react-dom": "^16.10.0"
+    "gatsby-plugin-mailchimp": "^5.1.2",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-stripe": "^1.2.3",
+    "react": "^16.10.1",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-dom": "^16.10.1",
+    "react-helmet": "^5.2.1",
+    "react-redux": "^7.0.3",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router-dom": "^5.0.0",
+    "react-router-hash-link": "^1.2.1",
+    "react-router-hash-link-offset": "^1.0.1",
+    "react-scripts": "2.1.8",
+    "react-scroll-to-component": "^1.0.2",
+    "react-stripe-checkout": "^2.6.3",
+    "react-stripe-elements": "^4.0.0",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-localstorage": "^1.1.4",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
@@ -26,5 +55,14 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
