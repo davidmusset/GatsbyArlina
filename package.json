@@ -23,7 +23,7 @@
     "express": "^4.17.0",
     "express-favicon": "^2.0.1",
     "fs": "0.0.1-security",
-    "gatsby": "^2.15.28",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-stripe": "^1.2.3",
